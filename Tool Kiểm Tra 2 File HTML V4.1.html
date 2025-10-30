@@ -415,7 +415,6 @@
             flex: 1;
             overflow: auto;
             padding: 20px;
-            min-height: 70vh;
         }
 
         .tab-content.active {
@@ -433,7 +432,6 @@
             border-radius: 4px;
             overflow: hidden;
             border: 1px solid var(--vs-border);
-            max-height: 80vh;
         }
 
         .analysis-header {
@@ -456,7 +454,7 @@
             font-family: 'Consolas', 'Monaco', monospace;
             font-size: 13px;
             line-height: 1.5;
-            max-height: 75vh;  /* Chiều cao tối đa = 75% màn hình */
+            max-height: 400px;
             overflow-y: auto;
         }
 
@@ -512,8 +510,6 @@
             padding: 15px;
             margin-bottom: 15px;
             border: 1px solid var(--vs-border);
-            max-height: 80vh;
-            overflow-y: auto;
         }
 
         .comparison-header {
@@ -536,7 +532,7 @@
             border-radius: 4px;
             overflow-x: auto;
             white-space: pre-wrap;
-            max-height: 70vh;
+            max-height: 300px;
             overflow-y: auto;
             border: 1px solid var(--vs-border);
             line-height: 1.6;
@@ -697,7 +693,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 0;
             margin-top: 20px;
-            height: 80vh;
+            height: 600px;
             border: 1px solid var(--vs-border);
             border-radius: 4px;
             overflow: hidden;
@@ -885,8 +881,6 @@
             padding: 15px;
             margin-bottom: 15px;
             border: 1px solid var(--vs-border);
-            max-height: 80vh;
-            overflow-y: auto;
         }
 
         .optimization-header {
@@ -908,7 +902,7 @@
         }
 
         .optimization-list {
-            max-height: 60vh;
+            max-height: 200px;
             overflow-y: auto;
             background: var(--vs-bg);
             border-radius: 4px;
@@ -1135,7 +1129,7 @@
             padding: 12px;
             margin-top: 10px;
             border: 1px solid var(--vs-border);
-            max-height: 65vh;
+            max-height: 200px;
             overflow-y: auto;
         }
 
@@ -1278,7 +1272,7 @@
         <header>
             <div>
                 <h1>⚡ Công cụ So sánh và Tối ưu HTML/CSS/JS</h1>
-                <p class="description">Powered by @huongnx - Trung tâm KDGP - VNPT Hà nội</p>
+                <p class="description">Phân tích, so sánh và tối ưu hóa code HTML, CSS và JavaScript</p>
             </div>
             <div class="quick-actions">
                 <button class="btn-success" onclick="analyzeBothFiles()">
@@ -1812,7 +1806,7 @@
             <div class="tab-content" id="text-diff-tab">
                 <div class="comparison-result">
                     <div class="comparison-header">
-                        <div class="comparison-title">So sánh Text </div>
+                        <div class="comparison-title">So sánh Text thông minh</div>
                         <div class="diff-info">
                             <span class="badge badge-success" id="text-added-count">+0</span>
                             <span class="badge badge-danger" id="text-removed-count">-0</span>
